@@ -1,0 +1,8 @@
+- name: master
+  provider: google
+  account: google-service-account-name
+  src: master.yaml
+- name: slave
+  provider: google
+  account: google-service-account-name
+  src: slave.yaml

@@ -1,0 +1,30 @@
+name: "master"
+zone: us-east-1a
+instances:
+  - name: front
+    count: 1
+    labels:
+      type: front
+      class: fast
+    instance_type: n1-standard-2
+    volumes:
+      - device_name: /dev/xvda
+        device_type: gp2
+        volume_size: 20
+        delete_on_termination: true
+        boot: true
+  - name: db
+    count: 1
+    labels:
+      type: db
+    instance_type: n1-standard-2
+    volumes:
+      - device_name: /dev/xvda
+        device_type: gp2
+        volume_size: 20
+        delete_on_termination: true
+        boot: true
+      - device_name: /dev/xvdb
+        device_type: gp2
+        volume_size: 100
+        delete_on_termination: false

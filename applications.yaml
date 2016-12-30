@@ -1,0 +1,11 @@
+- name: kuberlab
+  charts:
+    - name: elastic
+      src: dev.kuberlab.io/kuberlab/elastic
+      version: ^1.2.3
+      values:
+        file: reference to values
+    - name: kuberlab
+      src: dev.kuberlab.io/kuberlab/kuberlab
+      values:
+        file: reference to values
