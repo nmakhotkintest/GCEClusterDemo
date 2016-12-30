@@ -6,11 +6,13 @@
       clusters:
         - master
         - slave
-      values:
+      configuration:
         file: reference to values
+        values:
+          p1: test
     - name: kuberlab
       src: dev.kuberlab.io/kuberlab/kuberlab
       clusters:
         - master
-      values:
+      configuration:
         file: reference to values
