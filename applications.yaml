@@ -3,9 +3,14 @@
     - name: elastic
       src: dev.kuberlab.io/kuberlab/elastic
       version: ^1.2.3
+      clusters:
+        - master
+        - slave
       values:
         file: reference to values
     - name: kuberlab
       src: dev.kuberlab.io/kuberlab/kuberlab
+      clusters:
+        - master
       values:
         file: reference to values
