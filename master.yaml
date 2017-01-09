@@ -11,7 +11,7 @@ instances:
       - boot: true
         autoDelete: true
         initializeParams:
-          DiskSizeGb: 25
+          diskSizeGb: 25
   - name: db
     count: 1
     labels:
@@ -25,4 +25,4 @@ instances:
       - boot: false
         autoDelete: true
         initializeParams:
-          DiskSizeGb: 35
+          diskSizeGb: 35
