@@ -1,8 +1,4 @@
-- name: master
+- name: master-test
   provider: google
-  account: google-service-account-name
+  account: lucid-timing-151005
   src: master.yaml
-- name: slave
-  provider: google
-  account: google-service-account-name
-  src: slave.yaml
