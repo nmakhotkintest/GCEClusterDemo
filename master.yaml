@@ -22,7 +22,3 @@ instances:
         autoDelete: true
         initializeParams:
           diskSizeGb: "32"
-      - boot: false
-        autoDelete: true
-        initializeParams:
-          diskSizeGb: "8"
