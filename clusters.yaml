@@ -2,3 +2,4 @@
   provider: google
   account: lucid-timing-151005
   src: master.yaml
+  zone: asia-east1-a
