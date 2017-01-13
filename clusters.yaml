@@ -1,5 +1,8 @@
-- name: master-test
-  provider: google
-  account: seventh-seeker-155107
-  src: master.yaml
-  zone: asia-east1-a
+- Account: seventh-seeker-155107
+  Name: master-test
+  Provider: google
+  Src: master.yaml
+- Account: seventh-seeker-155107
+  Name: master-test-2
+  Provider: google
+  Src: master-test-2.yaml
