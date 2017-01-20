@@ -1,18 +1,1 @@
-- name: kuberlab
-  charts:
-    - name: elastic
-      src: dev.kuberlab.io/kuberlab/elastic
-      version: ^1.2.3
-      clusters:
-        - master
-        - slave
-      configuration:
-        file: reference to values
-        values:
-          p1: test
-    - name: kuberlab
-      src: dev.kuberlab.io/kuberlab/kuberlab
-      clusters:
-        - master
-      configuration:
-        file: reference to values
+{"name": "test", "displayName": "test", "RepositoryURL": "https://github.com/nmakhotkintest/GCEClusterDemo"}
