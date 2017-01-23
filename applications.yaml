@@ -1,5 +1,4 @@
 - name: kuberlab
-
   charts:
     - name: test-image
       src: https://github.com/nmakhotkin/test_repo
