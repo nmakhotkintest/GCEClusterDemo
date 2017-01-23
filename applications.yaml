@@ -1,11 +1,12 @@
 - name: kuberlab
-  clusters:
-    - master-test
+
   charts:
     - name: test-image
       src: https://github.com/nmakhotkin/test_repo
       version: 0.2.0
+      clusters:
+        - master-test
       configuration:
-        file: reference to values
+        file: values.yaml
         values:
           p1: test
