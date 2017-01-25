@@ -8,4 +8,4 @@
       configuration:
         file: values.yaml
         values:
-          p1: test
+          name: test-from-values
