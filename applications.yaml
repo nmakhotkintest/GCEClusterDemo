@@ -1,7 +1,7 @@
 - name: kuberlab
   charts:
     - name: test-image
-      src: https://github.com/nmakhotkin/test_repo
+      src: http://kuberlab.io/nikolay-makhotkin/test_chart
       version: ^1.0.0
       clusters:
         - master-test
