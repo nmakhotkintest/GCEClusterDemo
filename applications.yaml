@@ -8,8 +8,10 @@
       configuration:
         file: values.yaml
         values:
-          name: test-from-values
+          name1: test-from-values
           kuberlab.io/image:
             Name: nmakhotkin/test
             Tag: 0.3.0
             CandidateTag: ^0.3.0
+  global:
+    name: test-from-global
