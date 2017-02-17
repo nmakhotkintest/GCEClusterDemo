@@ -15,3 +15,10 @@
             CandidateTag: ^0.3.0
   global:
     name: test-from-global
+- name: wordpress
+  charts:
+    - name: wordpress-chart
+      src: https://github.com/nmakhotkin/wordpress-chart
+      version: "*"
+      clusters:
+        - master-test
