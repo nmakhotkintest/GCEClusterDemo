@@ -17,7 +17,7 @@
     name: test-from-global
 - name: wordpress
   charts:
-    - name: wordpress-chart
+    - name: wordpress
       src: https://github.com/nmakhotkin/wordpress-chart
       version: "*"
       clusters:
