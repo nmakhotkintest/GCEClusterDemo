@@ -1,18 +1,18 @@
-- name: kuberlab
-  charts:
-    - name: test-image
-      src: http://kuberlab.io/nikolay-makhotkin/test_chart
-      version: ^1.0.0
-      clusters:
-        - master-test
-      configuration:
-        file: values.yaml
-        values:
-          name1: test-from-values
-          Image:
-            kuberlab.io/image:
-              Name: nmakhotkin/test
-              Tag: 0.3.0
-              CandidateTag: ^0.3.0
+- charts:
+  - clusters:
+    - master-test
+    configuration:
+      file: values.yaml
+      values:
+        Image:
+          kuberlab.io/image:
+            CandidateTag: ^0.3.0
+            Name: nmakhotkin/test
+            Tag: 0.3.0
+        name1: test-from-values
+    name: test-image
+    src: http://kuberlab.io/nikolay-makhotkin/test_chart
+    version: ^1.0.0
   global:
     name: test-from-global
+  name: kuberlab
