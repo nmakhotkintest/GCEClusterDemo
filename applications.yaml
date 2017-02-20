@@ -1,25 +1,44 @@
-- name: kuberlab
-  charts:
-    - name: test-image
-      src: http://kuberlab.io/nikolay-makhotkin/test_chart
-      version: ^1.0.0
-      clusters:
-        - master-test
-      configuration:
-        file: values.yaml
-        values:
-          name1: test-from-values
-          Image:
-            kuberlab.io/image:
-              Name: nmakhotkin/test
-              Tag: 0.3.0
-              CandidateTag: ^0.3.0
+- charts:
+  - clusters:
+    - master-test
+    configuration:
+      file: values.yaml
+      values:
+        Image:
+          kuberlab.io/image:
+            CandidateTag: ^0.3.0
+            Name: nmakhotkin/test
+            Tag: 0.3.0
+        name1: test-from-values
+    name: test-image
+    protocol: ""
+    src: http://kuberlab.io/nikolay-makhotkin/test_chart
+    version: ^1.0.0
   global:
     name: test-from-global
-- name: wordpress
-  charts:
-    - name: wordpress
-      src: https://github.com/nmakhotkin/wordpress-chart
-      version: "*"
-      clusters:
-        - master-test
+  name: kuberlab
+- charts:
+  - clusters:
+    - master-test
+    configuration:
+      file: ""
+      values: null
+    name: wordpress
+    protocol: ""
+    src: https://github.com/nmakhotkin/wordpress-chart
+    version: '*'
+  global: null
+  name: wordpress
+- charts:
+  - clusters:
+    - master-test
+    configuration:
+      file: ""
+      values:
+        name: test-installed
+    name: test_chart
+    protocol: ""
+    src: https://github.com/nmakhotkin/test_repo/charts/test-image/
+    version: 1.2.1
+  global: null
+  name: my_new
