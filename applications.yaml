@@ -16,13 +16,3 @@
   global:
     name: test-from-global
   name: kuberlab
-- charts:
-  - clusters:
-    - master-test
-    configuration:
-      values:
-        name: test-installed
-    name: test_chart
-    src: https://github.com/nmakhotkin/test_repo/charts/test-image/
-    version: 1.2.1
-  name: my_new
