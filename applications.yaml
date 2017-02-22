@@ -12,7 +12,7 @@
             Tag: 0.3.0
         name1: test-from-values
     name: test-image
-    src: https://github.com/nmakhotkin/test_repo/charts/test_image
+    src: https://github.com/nmakhotkin/test_repo/charts/test-image
     version: ^1.0.0
 
   - name: demo-web-server
