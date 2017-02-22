@@ -1,4 +1,5 @@
-- charts:
+- name: kuberlab
+  charts:
   - clusters:
     - master-test
     configuration:
@@ -13,6 +14,12 @@
     name: test-image
     src: https://github.com/nmakhotkin/test_repo/charts/test_image
     version: ^1.0.0
+
+  - name: demo-web-server
+    src: https://github.com/kuberlab/demo-web-server/Chart
+    version: ^2.0.0
+    clusters:
+     - master-test
   global:
     name: test-from-global
-  name: kuberlab
+  
