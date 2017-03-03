@@ -7,9 +7,9 @@
       values:
         Image:
           kuberlab.io/image:
-            badCandidateTag: ^0.3.0
-            badName: nmakhotkin/test
-            badTag: 0.3.0
+            CandidateTag: ^0.3.0
+            Name: nmakhotkin/test
+            Tag: 0.3.0
         name1: test-from-values
     name: test-image
     src: https://github.com/nmakhotkin/test_repo/charts/test-image
