@@ -1,5 +1,4 @@
-- name: kuberlab
-  charts:
+- charts:
   - clusters:
     - master-test
     configuration:
@@ -12,15 +11,9 @@
             Tag: 0.3.0
         name1: test-from-values
     name: test-image
+    order: null
     src: https://github.com/nmakhotkin/test_repo/charts/test-image
     version: ^1.0.0
-
-  - name: demo-web-server
-    src: https://github.com/kuberlab/demo-web-server/Chart
-    version: ^2.0.0
-    clusters:
-     - master-test
-    order: 1
   global:
     name: test-from-global
-  
+  name: kuberlab
