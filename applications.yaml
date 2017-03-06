@@ -25,3 +25,10 @@
     clusters:		
      - master-test		
     order: 1
+- name: app3
+  charts:
+  - name: demo-web-server		
+    src: https://github.com/kuberlab/demo-web-server/Chart		
+    version: ^2.0.0		
+    clusters:		
+     - master-test
