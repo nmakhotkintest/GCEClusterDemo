@@ -17,11 +17,21 @@
   global:
     name: test-from-global
   name: kuberlab
-- name: app2
-  charts:
-  - name: demo-web-server		
-    src: https://github.com/kuberlab/demo-web-server/Chart		
-    version: ^2.0.0		
-    clusters:		
-     - master-test		
+- charts:
+  - clusters:
+    - master-test
+    configuration: {}
+    name: demo-web-server
     order: 1
+    src: https://github.com/kuberlab/demo-web-server/Chart
+    version: ^2.0.0
+  name: app2
+- charts:
+  - clusters:
+    - master-test
+    configuration: {}
+    name: test_chart
+    order: null
+    src: https://github.com/nmakhotkin/test_repo/charts/test-image/
+    version: 1.2.0
+  name: app3
