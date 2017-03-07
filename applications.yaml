@@ -97,4 +97,4 @@
     name: minecraft
     src: https://github.com/lsheiba/charts/stable/minecraft
     version: 0.1.2
-  name: app_test
+  name: app-test
