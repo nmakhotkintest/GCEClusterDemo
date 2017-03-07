@@ -44,4 +44,57 @@
     name: demo-web-server
     src: https://github.com/kuberlab/demo-web-server/Chart/
     version: 2.0.1
+  - clusters:
+    - master-test
+    configuration:
+      values:
+        image: itzg/minecraft-server
+        imageTag: latest
+        minecraftServer:
+          allowNether: true
+          announcePlayerAchievements: true
+          difficulty: easy
+          enableCommandBlock: true
+          eula: "FALSE"
+          forcegameMode: false
+          gameMode: survival
+          generateStructures: true
+          generatorSettings: null
+          hardcore: false
+          icon: null
+          jvmOpts: -Xmx512M -Xms512M
+          levelSeed: null
+          levelType: DEFAULT
+          maxBuildHeight: 256
+          maxPlayers: 20
+          maxTickTime: 60000
+          maxWorldSize: 10000
+          motd: Welcome to Minecraft on Kubernetes!
+          onlineMode: true
+          ops: null
+          pvp: false
+          rcon:
+            enabled: false
+            password: CHANGEME!
+            port: 25575
+            serviceType: LoadBalancer
+          serviceType: LoadBalancer
+          spawnAnimals: true
+          spawnMonsters: true
+          spawnNPCs: true
+          version: LATEST
+          viewDistance: 10
+          whitelist: null
+          worldSaveName: world
+        persistence:
+          dataDir:
+            Size: 1Gi
+            enabled: true
+        resources:
+          requests:
+            cpu: 500m
+            memory: 512Mi
+    name: minecraft
+    src: https://github.com/lsheiba/charts/stable/minecraft
+    version: 0.1.2
   name: app_test
