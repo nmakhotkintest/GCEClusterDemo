@@ -1,1 +1,20 @@
-[]
+- charts:
+  - clusters:
+    - master-test
+    configuration:
+      values:
+        Component: demo-server
+        CpuLimits: 100m
+        CpuRequests: 25m
+        Image:
+          Name: kuberlab/demo-web-server
+          Tag: latest
+        MemoryLimits: 64Mi
+        MemoryRequests: 64Mi
+        Name: demo
+        Replicas: 2
+        ServerVersion: 1.1.2
+    name: demo-web-server
+    src: https://github.com/kuberlab/demo-web-server/Chart/
+    version: 2.0.1
+  name: app-test
