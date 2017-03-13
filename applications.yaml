@@ -22,7 +22,7 @@
   - clusters:
     - master-test
     configuration: {}
-    name: test_chart
+    name: test-chart
     src: https://github.com/nmakhotkin/test_repo/charts/test-image/
     version: 1.4.0
   name: app3
