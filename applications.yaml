@@ -18,3 +18,11 @@
     src: https://github.com/kuberlab/demo-web-server/Chart/
     version: 2.0.1
   name: app-test
+- charts:
+  - clusters:
+    - master-test
+    configuration: {}
+    name: test_chart
+    src: https://github.com/nmakhotkin/test_repo/charts/test-image/
+    version: 1.4.0
+  name: app3
