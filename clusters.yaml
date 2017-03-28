@@ -1,4 +1,4 @@
-- Account: testcluster-158807
+- Account: kl-demo-1
   Name: master-test
   Provider: google
   Src: master.yaml
@@ -6,7 +6,3 @@
   Name: master-test-2
   Provider: google
   Src: master-test-2.yaml
-- Account: testcluster-158807
-  Name: test1
-  Provider: google
-  Src: test1.yaml
