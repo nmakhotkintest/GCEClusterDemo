@@ -1,6 +1,6 @@
 - Account: kube-config
   Name: master-test
-  Provider: google
+  Provider: kubernetes
   Src: master.yaml
 - Account: testcluster-158807
   Name: master-test-2
