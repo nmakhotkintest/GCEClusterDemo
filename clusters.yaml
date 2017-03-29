@@ -1,4 +1,4 @@
-- Account: kl-demo-1
+- Account: kube-config
   Name: master-test
   Provider: google
   Src: master.yaml
