@@ -3,6 +3,6 @@
   Provider: google
   Src: master.yaml
 - Account: "788157744186"
-  Name: aws
+  Name: test-aws
   Provider: amazon
   Src: aws.yaml
