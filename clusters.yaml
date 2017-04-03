@@ -2,7 +2,7 @@
   Name: master-test
   Provider: google
   Src: master.yaml
-- Account: testcluster-158807
-  Name: master-test-2
-  Provider: google
-  Src: master-test-2.yaml
+- Account: "788157744186"
+  Name: aws
+  Provider: amazon
+  Src: aws.yaml
