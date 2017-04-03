@@ -1,6 +1,6 @@
-- Account: admin@master-master-test|https://35.185.131.39:443
+- Account: kl-demo-2
   Name: master-test
-  Provider: kubernetes
+  Provider: google
   Src: master.yaml
 - Account: testcluster-158807
   Name: master-test-2
