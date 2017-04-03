@@ -1,5 +1,7 @@
 name: "master-test"
-zone: asia-east1-a
+zone: us-central1-c
+master_type: "n1-standard-1"
+region: us-central1
 instances:
   - name: front
     count: 1
