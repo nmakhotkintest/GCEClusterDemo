@@ -1,0 +1,19 @@
+name: "aws"
+zone: us-east-1a
+region: us-east-1
+master_type: m3.medium
+master_disk_type: gp2
+master_disk_size: 10
+instances:
+  - name: front
+    count: 1
+    labels:
+      type: front
+      class: fast1
+    instance_type: m3.medium
+    volumes:
+      - DeviceName: "/dev/xvda"
+        Ebs:
+          DeleteOnTermination: true
+          VolumeSize: 16
+          VolumeType: gp2
