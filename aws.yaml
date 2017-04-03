@@ -1,4 +1,4 @@
-name: "aws"
+name: test-aws
 zone: us-east-1a
 region: us-east-1
 master_type: m3.medium
