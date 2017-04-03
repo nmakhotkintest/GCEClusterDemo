@@ -1,6 +1,50 @@
 - charts:
   - clusters:
     - master-test
+    configuration: {}
+    name: cassandra
+    src: https://github.com/monstarnn/test-repo/cassandra
+    version: 0.2.1
+  name: cassandra
+- charts:
+  - clusters:
+    - master-test
+    configuration:
+      values:
+        Component: demo-server
+        CpuLimits: 100m
+        CpuRequests: 25m
+        Image:
+          Name: agunin/k-server-demo
+          Tag: latest
+        MemoryLimits: 64Mi
+        MemoryRequests: 64Mi
+        Name: k-demo-server
+        Replicas: 2
+    name: orel-server
+    src: https://github.com/dreyk/k-server-demo/chart
+    version: 1.0.0
+  - clusters:
+    - master-test
+    configuration:
+      values:
+        Component: demo-client
+        CpuLimits: 100m
+        CpuRequests: 25m
+        Image:
+          Name: agunin/k-client-demo
+          Tag: 1.0.0
+        MemoryLimits: 64Mi
+        MemoryRequests: 64Mi
+        Name: k-demo-client
+        Replicas: 1
+    name: orel-client
+    src: https://github.com/dreyk/k-client-demo/chart
+    version: 1.0.0
+  name: orel
+- charts:
+  - clusters:
+    - master-test
     configuration:
       values:
         Component: demo-server
@@ -15,8 +59,6 @@
         Replicas: 2
         ServerVersion: 1.1.2
     name: demo-web-server
-    src: https://github.com/kuberlab/demo-web-server/Chart/
+    src: https://github.com/kuberlab/demo-web-server/Chart
     version: 2.0.1
-  name: app-test
-- charts: []
-  name: app3
+  name: web
