@@ -1,5 +1,5 @@
 - Account: kl-demo1
-  Name: master-test
+  Name: storage-test
   Provider: google
   Src: master.yaml
 - Account: "788157744186"
