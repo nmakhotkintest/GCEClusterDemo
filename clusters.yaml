@@ -2,7 +2,7 @@
   Name: storage-test
   Provider: google
   Src: master.yaml
-- Account: "788157744186"
-  Name: test-aws
-  Provider: amazon
+- Account: kuber
+  Name: name
+  Provider: kubernetes
   Src: aws.yaml
