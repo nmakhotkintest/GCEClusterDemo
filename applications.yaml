@@ -6,27 +6,3 @@
     src: https://github.com/kuberlab-catalog/grafana-prometheus/chart/
     version: 1.0.0
   name: monitoring
-- charts:
-  - clusters:
-    - storage-test
-    configuration:
-      values:
-        image: wernight/codiad:latest
-        persistence:
-          accessMode: ReadWriteMany
-          datadir: /data
-          enabled: true
-          nfs:
-            path: /exports
-            server: 10.240.0.2
-          size: 16Gi
-          storageClass: standard
-        resources:
-          requests:
-            cpu: 50m
-            memory: 64Mi
-        serviceType: LoadBalancer
-    name: codiad
-    src: https://github.com/monstarnn/codiad-chart/
-    version: 0.0.1
-  name: codiad
