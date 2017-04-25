@@ -6,3 +6,18 @@
     src: https://github.com/kuberlab-catalog/grafana-prometheus/chart/
     version: 1.0.0
   name: monitoring
+- charts:
+  - clusters:
+    - storage-test
+    configuration:
+      values:
+        image: wernight/codiad:alpine
+        resources:
+          requests:
+            cpu: 50m
+            memory: 64Mi
+        serviceType: LoadBalancer
+    name: codiad
+    src: https://github.com/monstarnn/codiad-chart/
+    version: 0.0.1
+  name: codiad
