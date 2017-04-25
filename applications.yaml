@@ -29,4 +29,25 @@
     name: codiad
     src: https://github.com/monstarnn/codiad-chart/
     version: 0.0.1
+  - clusters:
+    - storage-test
+    configuration:
+      values:
+        image: wernight/codiad:alpine
+        persistence:
+          accessMode: ReadWriteMany
+          data_dir: /data
+          enabled: true
+          nfs:
+            path: /kuberlab
+            server: 127.0.0.1
+          size: 16Gi
+        resources:
+          requests:
+            cpu: 50m
+            memory: 64Mi
+        serviceType: LoadBalancer
+    name: codiad
+    src: https://github.com/monstarnn/codiad-chart/
+    version: 0.0.1
   name: codiad
