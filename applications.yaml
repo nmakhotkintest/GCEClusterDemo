@@ -1,8 +1,1 @@
-- charts:
-  - clusters:
-    - storage-test
-    configuration: {}
-    name: grafana-prometheus
-    src: https://github.com/kuberlab-catalog/grafana-prometheus/chart/
-    version: 1.0.0
-  name: monitoring
+[]
