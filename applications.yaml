@@ -1,16 +1,1 @@
-- charts:
-  - clusters:
-    - storage-test
-    configuration:
-      values:
-        persistence:
-          accessMode: ReadWriteOnce
-          enabled: true
-          size:
-            grafana: 1Gi
-            prometheus: 10Gi
-          storageClass: anything
-    name: grafana-prometheus
-    src: https://github.com/monstarnn/grafana-prometheus-chart/
-    version: 1.0.1
-  name: monitoring
+[]
