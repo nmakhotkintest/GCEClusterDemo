@@ -2,7 +2,7 @@
   Name: storage-test
   Provider: google
   Src: master.yaml
-- Account: kuber
-  Name: name
-  Provider: kubernetes
+- Account: lucid-timing-151005
+  Name: kuberlab
+  Provider: google
   Src: aws.yaml
