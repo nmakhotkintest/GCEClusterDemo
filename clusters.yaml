@@ -1,4 +1,5 @@
 - Account: kl-demo1
+  AutoDeploy: true
   Name: storage-test
   Provider: google
   Src: master.yaml
