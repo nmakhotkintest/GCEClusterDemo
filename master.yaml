@@ -2,6 +2,7 @@ name: "storage-test"
 zone: us-central1-c
 master_type: "n1-standard-1"
 region: us-central1
+kubernetes_version: v1.6.2
 storage:
   storage_type: nfs-server
   instance_count: 1
