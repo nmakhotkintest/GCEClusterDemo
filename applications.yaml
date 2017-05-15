@@ -1,1 +1,25 @@
-[]
+- charts:
+  - clusters:
+    - storage-test
+    configuration:
+      values:
+        cpu:
+          limits: 8000m
+          requests: 100m
+        image:
+          Name: lsheiba/tensorflow-ls-devel
+          Tag: latest
+        memory:
+          limits: 16Gi
+          requests: 64Mi
+        persistence:
+          accessMode: ReadWriteMany
+          enabled: true
+          size: 16Gi
+          storageClass: standard
+        replicas: 1
+        serviceType: ClusterIP
+    name: tensorflow-jupyter
+    src: https://github.com/lsheiba/tensorflow-jupyter/
+    version: 1.0.0
+  name: mln
